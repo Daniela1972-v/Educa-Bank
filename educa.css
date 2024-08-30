@@ -6,19 +6,19 @@
 }
 
 header {
-    background-color: rgb(101, 194, 181);
-    padding: 20px;
-    
-   
+    background-color: rgb(18, 129, 163);
+    padding: 30px;
 
 }
 
 header nav ul {
     display: flex;
+    justify-content: end;
 }
 
 header nav ul li {
     list-style: none;
+    font-size: 16px;
     margin-right: 10px;
 }
 
@@ -34,14 +34,14 @@ header nav ul li a:hover {
 }
 
 .sessao1 {
-    background: linear-gradient( 200deg, rgb(28, 110, 143) 9.33%, rgb(144, 211, 228) 90%);
+    background: linear-gradient( 200deg, rgb(173, 247, 237) 9.33%, rgb(30, 128, 153) 90%);
     padding: 250px; 
     
 }
 
 .sessao1 h2 {
     color: rgb(44, 42, 42);
-    font-size: 40px; 
+    font-size: 45px; 
     font-weight: bold;
     margin-top: 15px;
 }
@@ -88,6 +88,7 @@ header nav ul li a:hover {
 
 .sessao2 button {
     color: green;
+    
     width: 150px; 
     height: 40px; 
     background-color: whitesmoke; 
@@ -112,17 +113,15 @@ header nav ul li a:hover {
 .sessao3 {
     background-color: whitesmoke;
     padding: 250px;
-    
-    justify-content: center;
     align-items: center;
     
 
 }
 
-.sessao3 h3 {
+.sessao3 h2 {
     color: black;
     font-size: 40px; 
-    font-weight: bold;
+    font-weight: bolder;
     margin-top: 15px;
 
 }
@@ -132,6 +131,7 @@ header nav ul li a:hover {
     font-size: 18px; 
     font-weight: 400; 
     margin-top: 15px;
+    display: flex;
 
 }
 
@@ -142,6 +142,7 @@ header nav ul li a:hover {
     background-color: whitesmoke; 
     border-radius: 7px;
     margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .sessao3 button:hover {
@@ -153,15 +154,19 @@ header nav ul li a:hover {
 }
 
 .sessao3 img {
-    width: 50%;
+    width: 60%;
     height: auto;
+    
+   
 }
 
 .sessao3 .line1 {
-    width: 350px; 
+    width: 500px; 
     height: 1.5px; 
     background-color: #dbdada; 
     margin-top: 12px;
+    display: flex;
+    justify-content: center;
 }
 
 .sessao4 {
@@ -179,8 +184,9 @@ header nav ul li a:hover {
 }
 
 .sessao4 img {
-    width: 400px;
+    width: 350px;
     height: auto;
+    margin-top: 15px;
 
 }
 
@@ -194,7 +200,7 @@ header nav ul li a:hover {
 
 .sessao4 span {
     color: rgb(201, 201, 87);
-    font-weight: 300;
+    font-weight: 500;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
@@ -203,35 +209,46 @@ header nav ul li a:hover {
 
     color: black;
     font-size: 18px; 
-    font-weight: 400; 
+    font-weight: 600; 
     margin-top: 15px;
 
 }
 
 footer {
 
-    padding: 100px;
+    padding: 80px;
     background-color: rgb(31, 29, 29);
+
     align-items: center;
 }
 
 footer img {
 
-    width: 150px;
+    width: 200px;
     height: auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    
+    
 
 }
 
 footer p {
-    color: rgb(44, 42, 42);
+    color: rgb(70, 65, 65);
     font-size: 18px; 
     font-weight: 100;
 
 }
 
+footer nav ul {
+    display: flex;
+    justify-content: end;
+}
+
 footer nav ul li {
     list-style: none;
     margin-right: 10px;
+    
     
 }
 
