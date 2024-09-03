@@ -1,173 +1,189 @@
 * {
     margin: 0; 
     padding: 0; 
+    list-style: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    list-style: none; 
+    
 }
+
+/*Início do Header*/
 
 header {
     background-color: rgb(18, 129, 163);
-    padding: 30px;
+    padding: 50px; /*Tamanho/preenchimento*/
 
 }
 
-header nav ul {
-    display: flex;
-    justify-content: end;
+header nav ul { /*Ul - Estilizando a lista não ordenada do Header*/
+    display: flex; /*Colocando as LI lado a lado*/
+    justify-content: end; /*Justificando o conteúdo para o fim (posicionamento do header)*/
 }
 
-header nav ul li {
-    list-style: none;
-    font-size: 16px;
-    margin-right: 10px;
+
+header nav ul li a { /*Âncora do header*/
+    text-decoration: none; /*Retirando a decoração de texto (sublinhado*/
+    color: white; /*Cor da letra do Header*/
+    margin-left: 20px; /*Espaçamento entre as listas/Âncoras*/
 }
 
-header nav ul li a {
-    text-decoration: none;
-    color: white; 
-}
-
-header nav ul li a:hover {
-    color: blue;
-    transition: 0.5s;
+header nav ul li a:hover { /*Aplicando o Hover na âncora*/
+    color: blue; /*cor ao passar o mouse*/
+    transition: 0.5s; /**/
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+/*Fim do Header*/
 
+/*Estilizando a primeira sessão*/
 .sessao1 {
-    background: linear-gradient( 200deg, rgb(173, 247, 237) 9.33%, rgb(30, 128, 153) 90%);
-    padding: 250px; 
+    background: linear-gradient( 200deg, rgb(173, 247, 237) 9.33%, rgb(30, 128, 153) 90%); /*Uma cor com degradê*/
+    padding: 200px; /*Preenchimento da sessão*/
     
 }
 
-.sessao1 h2 {
-    color: rgb(44, 42, 42);
-    font-size: 45px; 
-    font-weight: bold;
-    margin-top: 15px;
-}
 
-.sessao1 p {
-    color: black; 
-    font-size: 25px; 
-    margin-top: 15px;
-}
-
-.sessao1 button {
-    color: green;
-    padding: 10px;
-    width: 250px; 
-    height: 50px; 
-    background-color: whitesmoke; 
-    border-radius: 20px;
-    margin-top: 15px;
-}
-
-.sessao1 button:hover{
-    background-color: green;
-     transition: 0.5s;
-     color: white;
-     cursor: pointer;
-}
-
-.sessao2 {
-
-    background-color: whitesmoke;
-    padding: 250px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.sessao2 p {
-    color: black; 
-    font-size: 20px; 
-    font-weight: 900; 
-    margin-top: 15px;
-
-}
-
-.sessao2 button {
-    color: green;
+.sessao1 h2 { /*Título da primeira sessão*/
+    color: rgb(44, 42, 42); /*Cor da letra*/
+    font-size: 45px; /*Tamanho da letra*/
+    font-weight: bold; /*Espressura da letra*/
     
-    width: 150px; 
-    height: 40px; 
-    background-color: whitesmoke; 
-    border-radius: 7px;
-    margin-top: 15px;
-
 }
 
-.sessao2 button:hover{
 
-     background-color: green;
-     transition: 0.5s;
-     color: white;
-     cursor: pointer;
+.sessao1 p { /*Parágrafo para estilização*/
+    color: black; /*Cor da letra*/
+    font-size: 25px;  /*Tamanho da letra*/
+    font-weight: 500; /*Peso da fonte*/
+    margin-bottom: 10px; /*espaçamento inferior*/
+    margin-top: 15px; /*Espaçamento superior*/
 }
 
-.sessao2 img {
-    width: 300px;
-    height: auto;
-}
-
-.sessao3 {
-    background-color: whitesmoke;
-    padding: 250px;
-    align-items: center;
-    
-
-}
-
-.sessao3 h2 {
-    color: black;
-    font-size: 40px; 
-    font-weight: bolder;
-    margin-top: 15px;
-
-}
-
-.sessao3 p {
-    color: gray;
-    font-size: 18px; 
-    font-weight: 400; 
-    margin-top: 15px;
-    display: flex;
-
-}
-
-.sessao3 button {
-    color: blue;
-    width: 150px; 
-    height: 40px; 
-    background-color: whitesmoke; 
-    border-radius: 7px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.sessao3 button:hover {
-    background-color: blue;
-    transition: 0.5s;
-    color: white;
-    cursor: pointer;
-
-}
-
-.sessao3 img {
-    width: 60%;
-    height: auto;
-    
+.sessao1 button { /*Estilização do botão da primeira sessão*/
+    color: green; /**/
+    padding: 10px; /**/
+    width: 250px;  /*Largura do botão*/
+    height: 50px; /*Altura do botão*/
+    border-color: aquamarine; /*Cor da borda*/
+    border-radius: 20px; /*Arredondamento do botão*/
+    margin-top: 15px; /*Espaçamento superior*/
    
 }
 
-.sessao3 .line1 {
-    width: 500px; 
-    height: 1.5px; 
-    background-color: #dbdada; 
-    margin-top: 12px;
-    display: flex;
-    justify-content: center;
+
+.sessao1 button:hover{ /*Aplicando o Hover no botão*/
+    background-color: green; /*Alterando a cor de fundo*/
+     transition: 0.5s; /*Tempo de transição*/
+     color: white; /*Cor da letra ao passar o mouse*/
+     border-color: white; /*Cor da borda ao passar o mouse*/
+     
 }
+/*Fim da estilização da primeira sessão*/
+
+
+/*Início da estilização da sessão 2*/
+
+.sessao2 { /*Estilizando a segunda sessão*/
+
+    background-color: whitesmoke; /*Cor de fundo*/
+    padding: 200px; /*Preenchimento da sessão*/
+    display: flex; /*Tornando a sessão Flex. Colocando os itens lado a lado*/
+    justify-content: space-evenly; /*Alinhamento na horizontal*/
+    align-items: center; /*Alinhamento na Vertical*/
+}
+
+
+.sessao2 p { /*Parágrafo para estilização*/
+    color: black; /*Cor da letra*/
+    font-size: 25px;  /*Tamanho da letra*/
+    margin-bottom: 15px; /*espaçamento inferior*/
+    font-weight: 500; /*Peso da fonte*/
+    margin-top: 15px; /*Espaçamento superior*/
+
+}
+
+.sessao2 button { /*Estilização do botão da primeira sessão*/
+    color: green; /*Cor da letra*/
+    padding: 10px; /*Tamanho*/
+    width: 250px;  /*Largura do botão*/
+    height: 50px; /*Altura do botão*/
+    border-color: aquamarine; /*Cor da borda*/
+    border-radius: 20px; /*Arredondamento do botão*/
+    margin-top: 15px; /*Espaçamento superior*/
+
+}
+
+.sessao2 button:hover{ /*Aplicando o Hover no botão*/
+    background-color: green; /*Alterando a cor de fundo*/
+     transition: 0.5s; /*Tempo de transição*/
+     color: white; /*Cor da letra ao passar o mouse*/
+     border-color: white; /*Cor da borda ao passar o mouse*/
+}
+
+.sessao2 img { /*Estilizando a imagem da sessão 2*/
+    width: 300px; /*Largura da imagem*/
+    height: auto; /*Altura da imagem (automática)*/
+    margin-left: 20px; /*Espaçamento à esquerda*/
+
+}
+/*Fim da estilização da segunda sessão*/
+
+
+/*Início da sessão 3*/
+
+.sessao3 { /*Estilizando a terceira sessão*/
+    background-color: whitesmoke; /*Cor de fundo da sessão*/
+    padding: 200px; /*Preenchimento da sessão*/
+    
+
+}
+
+.sessao3 h2 { /*Estilizando o Subtítulo*/
+    color: rgb(9, 9, 85); /*Cor da letra */
+    text-align: center; /*Alinhamento ao centro*/
+    font-size: 40px;  /*Tamanho da letra*/
+    margin-top: -170px;  /*Espaçamento em relação a sessão de cima*/
+    
+
+}
+
+.sessao3 p { /*Estilizando os parágrafos*/
+    color: gray; /*Cor da letra*/
+    font-size: 20px;  /*Tamanho da letra*/
+    margin-top: 30px; /*Margem superior*/
+    text-align: justify; /*Aqui justificamos o texto*/
+
+}
+
+.sessao3 button { /*Estilizando o botão*/
+    
+    color: blue; /*Cor da letra*/
+    padding: 10px; /*Preenchimento do botão*/
+    width: 250px;  /*Largura do botão*/
+    height: 50px; /*Altura do botão*/
+    border-color: blue; /*Cor da borda*/
+    border-radius: 20px; /*Arredondamento do botão*/
+    margin-top: 40px; /*Margin superior*/
+    margin-bottom: 40px; /*Margin Inferior*/
+
+}
+
+
+
+.sessao3 .line1 { /*Estilizando a linha*/
+    width: 70%; /*Largura da linha*/
+    margin: 40px auto; /* Espaçamento de 40px top e Bottom Primeiro valor( encima e embaixo) Segundo valor automática (direita e esquerda)*/
+   
+}
+
+.sessao3 img { /*Estilizando a imagem*/
+    width: 60%; 
+    height: auto;
+    margin-left: 200px; /*Espaçamento a esquerda*/
+    
+    /*Iremos alterar a formatação de alihamento*/
+   
+}
+
+
 
 .sessao4 {
     background-image: url(imagens/img\ cofre\ fundo.jpg);
