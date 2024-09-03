@@ -179,103 +179,93 @@ header nav ul li a:hover { /*Aplicando o Hover na âncora*/
     height: auto;
     margin-left: 200px; /*Espaçamento a esquerda*/
     
-    /*Iremos alterar a formatação de alihamento*/
+    /*Iremos alterar a formatação de alinhamento*/
    
 }
 
+/*Fim da estilização da terceira sessão*/ 
 
 
-.sessao4 {
-    background-image: url(imagens/img\ cofre\ fundo.jpg);
-    background-attachment: fixed;
-    padding: 250px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    justify-content: center;
-    align-items: center; 
-    background-position: center;
+
+.sessao4 { /**Estilizando a quarta sessão*/
+    
+    background: linear-gradient(180deg, #0c16a364 8.33%, rgba(5, 39, 101, 0.745) 100%), url(imagens/img\ cofre\ fundo.jpg); /*Filtro Gradient e imagem de fundo*/
+    padding: 200px; /*Preenchimento*/
+    background-size: cover; /*Tamanho da imagem = total*/
+    background-attachment: fixed; /*Deixando a imagem fixa*/
+    background-position: center; /*Posicionamento da imagem*/
+    display: flex; /*Tornando a sessão Flex. Colocando os itens lado a lado*/
+    justify-content: space-evenly; /*Justificativa do conteúdoAlinhamento na horizontal*/
+    align-items: center; /*Alinhamento na Vertical*/
+
+
+}
+
+.sessao4 img {  /*Estilizando a imagem do cofre*/
+    width: 350px; /*Largura da imagem*/
+    height: auto; /*Altura da imagem (automática)*/
+    
+
+}
+ 
+.sessao4 h3 { /*Estilizando o subtítulo*/
+    color: white; /*Cor da letra*/
+    font-size: 30px; /*Tamanho da letra*/
+    text-align: center; /*Alinhando o texto ao centro*/
+    margin-left: 30px; /*Espaçamento lateral*/
+    margin-bottom: 30px; /*Espaçamento inferior*/
+
+}
+
+.sessao4 span { /*Estilizando o span*/
+    color: rgb(201, 201, 87); /*Cor da letra*/
+    font-weight: 600; /*Peso da fonte*/
+    
+
+}
+
+.sessao4 p { /*Estilizando o parágrafo*/
+
+    color: white; /*Cor da letra*/
+    font-size: 20px;  /*Tamanho da letra*/
+    margin-left: 50px; /*Margin da esquerda*/
+
+}
+
+footer { /*Estilizando o rodapé da página*/
+
+    padding: 80px; /*Preenchimento*/
+    background-color: rgb(31, 29, 29); /*Cor de fundo*/
+    text-align: center;
+}
+
+.div-privacidade {
     display: flex;
-
-
-}
-
-.sessao4 img {
-    width: 350px;
-    height: auto;
-    margin-top: 15px;
+    justify-content: space-between;
 
 }
 
-.sessao4 h3 {
-    color: black;
-    font-size: 40px; 
-    font-weight: bold;
-    margin-top: 15px;
-
+.div-privacidade p {
+    text-align: center;
+    color: rgb(179, 174, 174);
 }
 
-.sessao4 span {
-    color: rgb(201, 201, 87);
-    font-weight: 500;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-}
-
-.sessao4 p {
-
-    color: black;
-    font-size: 18px; 
-    font-weight: 600; 
-    margin-top: 15px;
-
-}
-
-footer {
-
-    padding: 80px;
-    background-color: rgb(31, 29, 29);
-
-    align-items: center;
-}
-
-footer img {
-
-    width: 200px;
-    height: auto;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    
-    
-
-}
-
-footer p {
-    color: rgb(70, 65, 65);
-    font-size: 18px; 
-    font-weight: 100;
-
-}
-
-footer nav ul {
-    display: flex;
-    justify-content: end;
-}
-
-footer nav ul li {
-    list-style: none;
-    margin-right: 10px;
-    
-    
-}
-
-footer nav ul li a {
+.div-privacidade a {
     text-decoration: none;
-    color: white; 
+    color: white;
 }
 
-footer nav ul li a:hover {
-    background-color: brown;
-     transition: 0.5s;
-     color: white;
-     cursor: pointer;
+.div-privacidade a:hover {
+    background-color: purple; /*Cor da letra ao passar o mouse*/
+    transition: 0.8s; /*Tempo de transição*/
+     
+
 }
+
+.logo {
+    margin-bottom: 35px;
+
+}
+
+
+     
