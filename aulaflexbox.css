@@ -1,0 +1,106 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    padding: 100px; /*Preenchimento*/
+    background-color: #d3dbd9; /*Cor de fundo*/
+}
+
+
+header nav ul { /*Ul - Estilizando a lista não ordenada do Header*/
+    display: flex; /*Colocando as LI lado a lado*/
+    justify-content: center; /*Justificando o conteúdo ao centro(posicionamento do header)*/
+}
+
+
+header nav ul li a { /*Âncora do header*/
+    text-decoration: none; /*Retirando a decoração de texto (sublinhado*/
+    color: grey; /*Cor da letra do Header*/
+    margin-left: 20px; /*Espaçamento entre as listas/Âncoras*/
+}
+
+
+
+section {
+    padding: 200px; /*Preenchimento da sessão*/
+
+    display: flex; /*Tornando a sessão flex, deixando os conteúdo lado a lado*/
+    justify-content: center; /*Justificando o conteudo (horizontal)*/
+    align-items: center; /*Justificando os itens ao centro na vertical*/
+    gap: 30px; /*Propriedade utilizada para dar o respiro/espaço entre os elementos*/
+}
+section div {
+    width: 200px; /*Largura da caixa*/
+    height: 300px; /*Altura da caixa*/
+    background-color: rgb(196, 164, 125); /*Cor de fundo da caixa*/
+    padding: 20px; /*Preenchimento interno da caixa*/
+    box-shadow: 30px 30px 40px gray; /*Sombra externa da caixa primeiro valor eixo horizontal, segundo valor eixo vertical, ultimo valor exposição da sobra*/
+
+}
+
+section div:hover {
+    /*transform: translate(20px, 0px); /*Primeiro eixo X (Horizontal), depois valor do eixo Y (Vertical)*/
+
+    transition: 0.7s; /*Tempo de transição*/
+
+    /*transform: rotate(2deg); /*Aqui trabalhamos com a rotação da caixa*/
+
+    /*transform: scale(1.1, 1.1); /*Trabalha com a escala de movimentação dos eixos X e Y*/
+
+    /*transform: skew(5deg, -5deg);*/
+}
+
+    /* 1. translate ()
+  Descrição: Move um elemento ao longo dos eixos X (Horizontal) e Y (Vertical). */
+
+    /* 2. rotate ()
+    Descrição: Rotaciona um elemento ao redor do seu ponto central*/
+
+    /* 3. scale ()
+    Descrição: redimensiona um elemento ao longo dos eixos X e Y.*/
+
+    /* 4. Skew ()
+    Descrição: Inclina um elemento ao longo dos eixos X e Y.*/
+
+.sessao2 {
+    padding: 200px;
+    background-image: url(imagens/teeth-2414909_1280.jpg);
+    background-size: cover; /*Tamanho da imagem = total*/
+    background-attachment: fixed; /*Deixando a imagem fixa*/
+    background-position: center; /*Posicionamento da imagem*/
+       
+}
+
+
+
+
+.sessao2 h2 {
+    color: black; /*Cor da letra*/
+    font-size: 40px; /*Tamanho da letra*/
+    font-weight: bolder; /*Espressura da letra*/
+}
+
+.sessao2 p {
+    color: black; /*Cor da letra*/
+    font-size: 25px;  /*Tamanho da letra*/
+    font-weight: 700; /*Peso da fonte*/
+    margin-bottom: 10px; /*espaçamento inferior*/
+    margin-top: 15px; /*Espaçamento superior*/
+}
+
+footer {
+    padding: 100px; /*Preenchimento*/
+    background-color: #a4bdbc; /*Cor de fundo*/
+}
+
+footer p {
+    
+}
+    
+
+
+
